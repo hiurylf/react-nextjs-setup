@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { AppProps } from 'next/app';
-import { Container, Footer } from '../styles/pages/Home';
+import Image from 'next/image';
+
+import { Footer, Container } from '../styles/pages/Home';
 
 const Home: React.FC<AppProps> = ({ Component, pageProps }) => (
    <Container>
@@ -9,12 +11,11 @@ const Home: React.FC<AppProps> = ({ Component, pageProps }) => (
          <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-         <h1>
-            This is a React Setup with Next.js, TypeScript, ESLint and Styled
-            Components
-         </h1>
-      </main>
+      <Image src="/nextjs.svg" alt="Vercel Logo" width={400} height="auto" />
+      <h1>
+         This is a React Setup with Next.js, TypeScript, ESLint and Styled
+         Components
+      </h1>
 
       <Footer>
          Powered by

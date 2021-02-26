@@ -7,9 +7,13 @@ export const Container = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+   h1 {
+      padding: 5px 20px;
+   }
 `;
 
-export const Footer = styled.footer`
+export const Footer = styled.div`
    width: 100%;
    height: 100px;
    display: flex;
@@ -19,5 +23,9 @@ export const Footer = styled.footer`
    a {
       color: #0070f3;
       text-decoration: none;
+
+      &:hover {
+         color: #4d9dff;
+      }
    }
 `;
